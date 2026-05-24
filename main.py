@@ -27,3 +27,13 @@ class HyperCar(Car):
     
 def get_info(self):        
      return f"{super().get_info()} and a top speed of {self.top_speed} mph"
+
+
+
+class F22(Vehicle):
+    def __init__(self, make, model, year, stealth_level):
+        super().__init__(make, model, year)
+        self.stealth_level = stealth_level
+
+    def launch_missile(self):
+        print("Missile launched!")
